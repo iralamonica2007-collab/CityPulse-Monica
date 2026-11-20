@@ -12,6 +12,37 @@ wsl --list --verbose
 
 ![WSL check](wsl-list.png)
 
+## Project Setup: Folder, Hidden File and Listing
+
+Create a folder, create a hidden `.env` file, and list files in different ways.
+
+```powershell
+ls
+```
+
+```bash
+mkdir linux
+ls
+ls -l   # long format: permissions, owner, size, date
+ls -a   # also shows hidden files such as .env
+```
+
+![Folder listing in PowerShell](linux.png)
+![mkdir and ls options in Linux](linux_commands.png)
+
+## User and Login Information
+
+```bash
+whoami        # current user name
+who           # who is logged in
+w             # logged-in users and what they are running
+id -un        # user name from the user ID
+echo $USER    # USER environment variable
+echo "Hello"  # print text
+```
+
+![User commands](usernames.png)
+
 ## Task 1: Create and Remove a Directory
 
 `mkdir` creates a directory. `rmdir` removes it, but only when it is empty.
