@@ -27,7 +27,7 @@ ls -l   # long format: permissions, owner, size, date
 ls -a   # also shows hidden files such as .env
 ```
 
-![Folder listing in PowerShell](linux.png)
+![Folder listing in PowerShell](linux/linux.png)
 ![mkdir and ls options in Linux](linux_commands.png)
 
 ## User and Login Information
@@ -54,7 +54,7 @@ rmdir practice-dir
 ls
 ```
 
-![Create and remove a directory](screenshots/02-create-remove-directory.png)
+![Create and remove a directory](homework/02-create-remove-directory.png)
 
 ## Task 2: Remove a File
 
@@ -67,7 +67,7 @@ rm notes.txt
 ls
 ```
 
-![Remove a file](screenshots/03-remove-file.png)
+![Remove a file](homework/03-remove-file.png)
 
 ## Task 2.1: Remove a Folder and Everything Inside It
 
@@ -83,7 +83,7 @@ ls
 
 > `rm -r` deletes permanently. Check the name before pressing Enter.
 
-![Remove a folder recursively](screenshots/04-remove-folder-recursive.png)
+![Remove a folder recursively](homework/04-remove-folder-recursive.png)
 
 ## Task 3: Rename a File and Check Disk Usage
 
@@ -96,7 +96,7 @@ ls
 df -h
 ```
 
-![Rename a file and check disk usage](screenshots/05-rename-and-disk-usage.png)
+![Rename a file and check disk usage](homework/05-rename-and-disk-usage.png)
 
 ## Task 4: File Permissions
 
@@ -117,7 +117,7 @@ ls -l myscript.sh
 | `755` | Owner can read/write/execute; everyone else can read/execute |
 | `777` | Everyone can read, write and execute |
 
-![File permissions](screenshots/06-file-permissions.png)
+![File permissions](homework/06-file-permissions.png)
 
 ## Task 5: List Running Processes
 
@@ -127,4 +127,25 @@ ls -l myscript.sh
 ps aux
 ```
 
-![Running processes](screenshots/07-running-processes.png)
+![Running processes](homework/07-running-processes.png)
+
+## Shell Scripts
+
+Run them in Ubuntu from this folder:
+
+```bash
+chmod +x run.sh read.sh number.sh
+./run.sh
+./read.sh
+./number.sh
+```
+
+| Script | What it practices |
+| --- | --- |
+| [`run.sh`](run.sh) | Variables (`name="Monica"`, no spaces around `=`), `echo`, command output with `$(date)` and `$(pwd)`, writing a file with `>` |
+| [`read.sh`](read.sh) | Reading input with `read -p`, then saving it to `output/output.txt` (`>` replaces the file, `>>` adds a line) |
+| [`number.sh`](number.sh) | `if` / `elif` / `else` with `-gt` and `-lt`, and a `while` loop that counts from 1 to 5 |
+
+## JSON Basics
+
+JSON objects, arrays and syntax rules are in [api/README.md](api/README.md).
