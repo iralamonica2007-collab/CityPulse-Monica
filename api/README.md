@@ -1,48 +1,89 @@
-# JSON Basics
+# JSON Fundamentals
 
-JSON (JavaScript Object Notation) is a simple text format for storing data and sending it between apps and APIs.
+This folder contains examples of JSON (JavaScript Object Notation).
 
 ## 1. JSON Object
 
-An object holds data as `key: value` pairs inside `{ }`.
+A JSON object stores data in key-value pairs.
+
+### Example
 
 ```json
 {
-  "name": "Monica",
-  "college": "Atria University",
-  "course": "<your course>",
-  "year": 2
+    "name": "Monica Irala",
+    "age": 19,
+    "college": "Atria University",
+    "course": "BS Engineering",
+    "department": "Digital Transformation"
 }
 ```
 
-- `name`: the student's name (text)
-- `college`: the college name (text)
-- `course`: the course being studied (text)
-- `year`: the current year of study (number, so no quotes)
+### Explanation
 
-## 2. JSON Object with Arrays
+- `name` stores the student's full name.
+- `age` stores the age as a number, so it has no quotes.
+- `college` stores the college name.
+- `course` stores the course being studied.
+- `department` stores the department.
 
-A value can also be an array: a list of items inside `[ ]`.
+Each key is a string in double quotes, followed by `:` and its value.
+
+---
+
+## 2. JSON Object with Array
+
+A JSON object can also hold an array as a value.
+
+An array stores a list of values inside square brackets `[]`.
+
+### Example
 
 ```json
 {
-  "name": "Monica",
-  "skills": ["Linux", "Git", "Bash", "HTML"],
-  "hobbies": ["<hobby 1>", "<hobby 2>"]
+    "name": "Monica Irala",
+    "age": 19,
+    "college": "Atria University",
+    "skills": [
+        "Linux",
+        "Bash",
+        "Git",
+        "GitHub",
+        "JSON"
+    ],
+    "hobbies": [
+        "Hobby 1",
+        "Hobby 2",
+        "Hobby 3"
+    ]
 }
 ```
 
-- `skills`: an array of skills
-- `hobbies`: an array of hobbies
+### Explanation
+
+- `name`, `age` and `college` are normal key-value pairs.
+- `skills` is an array holding several skills.
+- `hobbies` is an array holding several hobbies.
+
+---
 
 ## JSON Syntax
 
-| Symbol | Meaning |
-| --- | --- |
-| `{ }` | An object |
-| `[ ]` | An array (list) |
+| Symbol | Purpose |
+|---|---|
+| `{ }` | Defines a JSON object |
+| `[ ]` | Defines an array |
 | `:` | Separates a key from its value |
-| `,` | Separates items |
-| `" "` | Text (a string). Keys always use double quotes |
+| `,` | Separates properties or array items |
+| `" "` | Defines strings (text) |
 
-Rules to remember: keys must be in double quotes, there is no comma after the last item, and comments are not allowed.
+### Rules
+
+- Keys must always be in double quotes.
+- No comma after the last item.
+- Comments are not allowed in JSON.
+
+---
+
+## Conclusion
+
+JSON is a lightweight, easy-to-read format used to store data and send it between applications and APIs.
